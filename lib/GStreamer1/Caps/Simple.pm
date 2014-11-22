@@ -22,7 +22,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 # POSSIBILITY OF SUCH DAMAGE.
 package GStreamer1::Caps::Simple;
-$GStreamer1::Caps::Simple::VERSION = '0.001';
+$GStreamer1::Caps::Simple::VERSION = '0.002';
 use v5.12;
 use warnings;
 

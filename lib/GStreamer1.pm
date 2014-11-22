@@ -22,7 +22,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 # POSSIBILITY OF SUCH DAMAGE.
 package GStreamer1;
-$GStreamer1::VERSION = '0.001';
+$GStreamer1::VERSION = '0.002';
 use v5.12;
 use warnings;
 use Glib::Object::Introspection;
@@ -104,7 +104,7 @@ to keep in mind.
 
 =head2 ElementFactory
 
-The original GStreamer had a version of C<<ElementFactory->make()>> which 
+The original GStreamer had a version of C<< ElementFactory->make() >> which 
 could be called with a list of gst plugins and associated names.  GStreamer1 
 may add a similar method in the future.  For now, the bindings directly follow 
 from the C interface, so they take only one at a time.
@@ -123,8 +123,8 @@ Example:
 
 =head2 Adding/linking
 
-The original GStreamer added methods for C<<Pipeline->add()>> and 
-C<<Element->link()>> that could take lists of objects.  GStreamer1 may add 
+The original GStreamer added methods for C<< Pipeline->add() >> and 
+C<< Element->link() >> that could take lists of objects.  GStreamer1 may add 
 similar methods in the future.  For now, the bindings directly follow from the 
 C interface, so they take only one object at a time.
 
