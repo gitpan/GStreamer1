@@ -22,7 +22,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 # POSSIBILITY OF SUCH DAMAGE.
 package GStreamer1;
-$GStreamer1::VERSION = '0.002';
+$GStreamer1::VERSION = '0.003';
 use v5.12;
 use warnings;
 use Glib::Object::Introspection;

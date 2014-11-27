@@ -3,6 +3,12 @@
 use strict;
 use warnings;
 
+# inserted by Dist::Zilla::Plugin::CheckLib 0.006
+use Devel::CheckLib;
+check_lib_or_exit(
+    lib => 'gstreamer-1.0',
+);
+
 
 
 use ExtUtils::MakeMaker 6.30;
@@ -13,6 +19,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Bindings for GStreamer 1.0, the open source multimedia framework",
   "AUTHOR" => "Timm Murray <tmurray\@wumpus-cave.net>",
   "CONFIGURE_REQUIRES" => {
+    "Devel::CheckLib" => "0.9",
     "ExtUtils::MakeMaker" => "6.30"
   },
   "DISTNAME" => "GStreamer1",
@@ -25,7 +32,7 @@ my %WriteMakefileArgs = (
   "TEST_REQUIRES" => {
     "Test::Pod" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
